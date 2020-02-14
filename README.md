@@ -1,2 +1,2 @@
 # blog
-Blog for the Ryberg group
+[Blog](https://ryberggroup.github.io/blog/) for the Ryberg group
