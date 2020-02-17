@@ -1,8 +1,9 @@
 var posts = {
     entries:[
 	{
-	"address":"/blog/blog_posts/nonono.html",
-	"title":"Do not exist"
+	"address":"/blog/blog_posts/classifications.html",
+	"title":"A little bit about classifications",
+	"summary":"A short rant on classifications in biology"
 	},
 	{
 	"address":"/blog/blog_posts/test_post1.html",

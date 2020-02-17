@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Ryberg group blog</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<p>This is just a test!
-<a href="blog_posts/test_post1.html">Test</a>
+<article>
+<p>This blog will contain infrequent posts on topics relevant to the research in the <a href="https://www.iob.uu.se/forskning/systematisk-biologi/ryberg/">Ryberg group</a> at Uppsala University. It is run at <a href="https://github.com/RybergGroup/blog">GitHub</a> on a personal set up. Comments are powered by <a href="https://utteranc.es/">utterances</a> and require a GitHub account.
 </p>
+<ul id="post_list"></ul>
+</article>
+<footer id="page_footer">
 </body>
 </html>
+<script src="database.js"></script>
+<script src="footer.js"></script>
 <script>
-
+    var make_post_list = function () {
+	var list = '';
+	for (var i=0; i < posts.entries.length; ++i) {
+	    if (posts.entries[i].address && posts.entries[i].title) list += '<li><a href="' + posts.entries[i].address + '">' + posts.entries[i].title + '</a></li>';
+	}
+	document.getElementById("post_list").innerHTML = list;
+    }
+    document.addEventListener("load",make_post_list());
 </script>

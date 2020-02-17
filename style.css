@@ -4,7 +4,7 @@ h1 {
 article {
     margin-left: auto;
     margin-right: auto;
-    width: 60em;
+    width: 50em;
     background-color: #FFDA99;
 }
 address {
@@ -19,6 +19,14 @@ body {
     overflow: hidden;
 }
 
+.topnav a {
+    display: block;
+    color: white;
+    width: 60px;
+    text-align: center;
+    background-color: #000000;
+}
+
 .nav-left {
     float: left;
 }
@@ -27,7 +35,7 @@ body {
     float: right;
 }
 
-.nav-home  {
+.nav-home {
     float: none;
     position: absolute;
     top: 50%;
