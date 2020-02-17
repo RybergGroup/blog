@@ -13,3 +13,38 @@ address {
 body {
   background-color: #C2824A;
 }
+
+.topnav {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-home  {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 600px) {
+  .nav-right {
+    float: none;
+    display: block;
+  }
+
+  .nav-home {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
