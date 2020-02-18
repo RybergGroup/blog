@@ -14,6 +14,16 @@ body {
   background-color: #C2824A;
 }
 
+img.right {
+    float:right;
+    padding: 1em;
+}
+
+img.left {
+    float:left;
+    padding: 1em;
+}
+
 .topnav {
     position: relative;
     overflow: hidden;
