@@ -18,12 +18,12 @@ body {
   background-color: #C2824A;
 }
 
-img.right {
+.float-right {
     float: right;
     margin-left: 1em;
 }
 
-img.left {
+.float-left {
     float: left;
     margin-right: 1em;
 }
